@@ -1,3 +1,1 @@
-javaOptions in Universal ++= Seq(
-  "-Dhttp.port=8888"
-)
+javaOptions in Universal ++= Seq()
