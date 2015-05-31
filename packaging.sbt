@@ -1,3 +1,7 @@
+val httpPort = 8888
 javaOptions in Universal ++= Seq(
-  "-Dhttp.port=8888"
+  s"-Dhttp.port=$httpPort"
 )
+
+// docker settings
+dockerExposedPorts += httpPort
