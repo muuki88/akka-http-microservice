@@ -1,9 +1,10 @@
-enablePlugins(JavaAppPackaging)
+enablePlugins(JavaServerAppPackaging, JDebPackaging)
 
 name         := "akka-http-microservice"
 organization := "com.theiterators"
 version      := "1.0"
 scalaVersion := "2.11.5"
+maintainer   := "Nepomuk Seiler <nepomuk.seiler@mukis.de>"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
