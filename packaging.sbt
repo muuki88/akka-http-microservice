@@ -5,3 +5,7 @@ javaOptions in Universal ++= Seq(
 
 // docker settings
 dockerExposedPorts += httpPort
+
+// server settings
+import com.typesafe.sbt.packager.archetypes.ServerLoader
+serverLoading in Debian := ServerLoader.Systemd
